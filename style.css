@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+
+.corpo {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position-y: 60%;
+    height: 100vh;
+}
+
+html {
+    font-size: 5px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header01 {
+    padding-left: 7%;
+    width: 60%;
+}
+
+.header01 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 11rem;
+    background-color: #e67e34;
+    font-size: 6rem;
+    color: white;
+}
+
+.header02 {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    gap: 10%;
+}
+
+.header02 h3 {
+    font-size: 4rem;
+}
+
+.header03 {
+    padding-left: 5%;
+    width: 20%;
+    display: flex;
+    gap: 30%;
+}
+
+.header03 i {
+    font-size: 4.5rem;
+}
+
+.menu {
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.menu01 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+}
+
+.menu02 {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+
+.menu03 {
+    text-align: center;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu03 h3 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+
+.text01 {
+    font-size: 5rem;
+    color: #e67e34;
+}
+
+.menu04 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu04 h1 {
+    color: #e67e34;
+    font-size: 12rem;
+}
+
+.menu04 p {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.menu04 i {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.menu05 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-right: 7%;
+}
+
+.menu05 i {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    font-size: 4rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+.submenu01 {
+    display: flex;
+    gap: 15px;
+}
+
+.submenu01 p {
+    padding: 5px 10px;
+    font-size: 4rem;
+    font-weight: 600;
+    border: 2px solid rgb(217, 200, 200);
+    border-radius: 100%;
+}
+
+.text02 {
+    padding: 5px 10px;
+    font-size: 4rem;
+    font-weight: 600;
+    border: 2px solid #e67e34;
+    border-radius: 100%;
+}
+
+.submenu02 {
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    border: 2px solid;
+}
+
+.submenu02 h2 {
+    font-size: 4rem;
+}
+
+footer {
+    margin-left: 5%;
+    margin-top: 200px;
+    display: flex;
+    gap: 50px;
+}
+
+footer i {
+    font-size: 6rem;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1300px){
+    .header01 {
+        width: 30%;
+    }
+
+    .header01 h2 {
+        width: 70%;
+        max-width: 90px;
+    }
+
+    .header02 {
+        width: 35%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 4px;
+    }
+
+    .header01 {
+        width: 25%;
+    }
+
+    .header01 h2 {
+        width: 100%;
+    }
+
+    .header02 {
+        display: none;
+    }
+
+    .header03 {
+        gap: 30px;
+        margin-right: 5%;
+    }
+
+    .header03 i {
+        font-size: 6rem;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .menu03 {
+        flex-direction: row;
+    }
+
+    .menu04 {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .corpo {
+        background-position-x: 20%;
+    }
+    html {
+        font-size: 3px;
+    }
+
+    .header01 {
+        width: 22%;
+    }
+
+    .header01 h2 {
+        width: 100%;
+    }
+
+    .header02 {
+        display: none;
+    }
+
+    .header03 {
+        margin-right: 13%;
+        gap: 40px;
+    }
+
+    .header03 i {
+        font-size: 7rem;
+    }
+
+    main {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+    .menu03 {
+        flex-direction: row;
+
+    }
+
+    .menu04 {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 100px;
+    }
+}
